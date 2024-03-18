@@ -1,0 +1,74 @@
+/* <!-- exmaple 1 --> */
+.box {
+    position: relative;
+    animation: geeks 5s infinite;
+    animation-play-state: paused;
+height: 80px;
+font-size: 80px;
+
+}
+  
+@keyframes geeks {
+   0% {
+        left: 0px;
+         background: red;
+         
+        
+    }
+    100% {
+        left: 500px;
+      background: green;
+         ;
+    }
+}
+
+.box.horizTranslate {
+    animation-play-state: running;
+}
+  
+
+/* makes it so it starts and stops when you hover over the div */
+
+.box:hover {
+    animation-play-state: running;
+}
+
+/* <!-- exmaple 2 --> */
+
+
+.box2 {
+    position: relative;
+    animation: geeks2 3s infinite;
+    animation-play-state: paused;
+height: 80px;
+font-size: 80px;
+
+}
+  
+@keyframes geeks2 {
+   0% {
+        left: 0px;
+         background: rgb(81, 243, 243);
+         color: rgb(0, 0, 0);
+         top:0px
+        
+    }
+    100% {
+        left: 500px;
+      background: rgb(63, 4, 82);
+      color: azure
+         ;
+        top:80px
+    }
+}
+
+.box2.horizTranslate2 {
+    animation-play-state: running;
+}
+  
+
+/* makes it so it starts and stops when you hover over the div */
+
+.box2:hover {
+    animation-play-state: running;
+}
